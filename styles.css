@@ -74,7 +74,7 @@ footer {
 }
 
 header p.small-gap {
-  margin-top: 1em; /* adds half a line of space above */
+  margin-top: 0.5em; /* adds half a line of space above */
 }
 
 /* Header layout */
@@ -92,8 +92,9 @@ header p.small-gap {
 
 /* Profile photo styling */
 .profile-photo {
-  width: 25%;          /* slightly bigger than before */
+  width: 25%;          /* slightly bigger */
   max-width: 240px;    /* never larger than 240px */
   min-width: 160px;    /* never smaller than 160px */
+  border-radius: 50%;  /* makes the photo perfectly round */
   display: block;
 }
