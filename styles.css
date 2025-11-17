@@ -104,3 +104,21 @@ footer {
   border-radius: 50%;  /* perfectly round */
   display: block;
 }
+
+.job-market-banner {
+  background-color: #f4f4f4;   /* light grey background */
+  color: #000;                 /* black text */
+  text-align: center;          /* center the text */
+  font-weight: bold;           /* emphasize */
+  font-size: 1.1rem;           /* slightly larger text */
+  padding: 10px 0;             /* spacing */
+  border-bottom: 2px solid #ccc; /* subtle grey divider */
+}
+
+/* Optional: adjust for mobile screens */
+@media (max-width: 600px) {
+  .job-market-banner {
+    font-size: 1rem;
+    padding: 8px 0;
+  }
+}
