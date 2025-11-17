@@ -101,51 +101,17 @@ header p.small-gap {
 
 /* Contact section alignment */
 section {
-  text-align: left;   /* force section text to align left */
-  margin-left: 0;     /* remove unintended left margin */
-}
-
-section ul {
-  list-style: none;   /* remove bullets for clean look */
-  padding-left: 0;    /* no extra indentation */
-  text-align: left;   /* align list items left */
-}
-
-section li {
-  text-align: left;   /* ensure each list item is left-aligned */
-}
-
-/* Research section */
-.home-research {
   text-align: left;   /* align flush left */
-  margin-left: 20px;  /* match header text spacing */
-}
-.home-research p {
-  margin: 0.3em 0;
-}
-
-/* Contact section */
-.home-contact {
-  text-align: left;   /* align flush left */
-  margin-left: 20px;  /* match header text spacing */
-}
-.home-contact p {
-  margin: 0.5em 0;
-}
-
-/* Contact section alignment */
-section {
-  text-align: left;   /* force section text to align left */
-  margin-left: 0;     /* remove unintended left margin */
+  margin-left: 0;     /* no unintended margin */
 }
 
 section ul {
   list-style: none;   /* remove bullets */
-  padding-left: 0;    /* remove default indentation */
-  margin-left: 20px;  /* align with header text spacing */
+  padding-left: 0;    /* remove indentation */
+  margin-left: 0;     /* align flush with header text */
 }
 
 section li {
-  text-align: left;   /* ensure each item is left-aligned */
-  margin: 0.3em 0;    /* neat spacing between lines */
+  text-align: left;   /* align each item left */
+  margin: 0.3em 0;    /* neat spacing */
 }
