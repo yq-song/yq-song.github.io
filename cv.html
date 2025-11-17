@@ -3,29 +3,124 @@
 <head>
   <meta charset="utf-8">
   <title>Curriculum Vitae — Yuqing Song</title>
+  <link rel="stylesheet" href="styles.css"> <!-- optional external CSS -->
   <style>
-    body { font-family: system-ui, sans-serif; margin: 40px; line-height: 1.6; }
-    nav a { margin-right: 15px; text-decoration: none; color: #0ea5e9; }
-    nav a:hover { text-decoration: underline; }
-    h1, h2 { color: #0ea5e9; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    nav {
+      background-color: #f5f5f5;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+    }
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #0ea5e9;
+    }
+    section {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    h1, h2 {
+      color: #222;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #f5f5f5;
+      margin-top: 40px;
+    }
   </style>
 </head>
 <body>
-  <h1>Curriculum Vitae</h1>
-
   <!-- Navigation -->
   <nav>
-    <a href="index.html">Home</a>
-    <a href="cv.html">CV</a>
-    <a href="research.html">Research</a>
+    <ul>
+      <li><a href="index.html#about">About</a></li>
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="cv.html">CV</a></li>
+      <li><a href="index.html#contact">Contact</a></li>
+    </ul>
   </nav>
 
-  <!-- Download CV Section -->
+  <!-- CV header -->
+<header>
+  <h1>Curriculum Vitae</h1>
+  <p>Final-year PhD candidate</p>
+  <p>Solvay Brussels School of Economics and Management · Université Libre de Bruxelles</p>
+  <p>Cultural Economist · Collaborator · Artist</p>
+</header>
+
+  <!-- Download link -->
   <section>
     <h2>Download CV</h2>
     <p>
       <a href="CV_YuqingSong" download>📄 Download my CV (PDF)</a>
     </p>
   </section>
+
+  <!-- Inline CV content (optional) -->
+  <section>
+    <h2>Academic Background</h2>
+    <ul>
+      <li>PhD in Economics, Université Libre de Bruxelles (expected 2026)</li>
+      <li>M.A. in Cultural Policy, [University Name]</li>
+      <li>B.A. in Economics, [University Name]</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Research Interests</h2>
+    <p>Art markets (visual arts, Chinese art, antiques, fashion, museum studies); Multidisciplinary studies of the arts (aesthetics, psychology of the arts, social history of the arts, art marketing, value of art, behavioural economics).</p>
+  </section>
+
+<section>
+  <h2>Selected Publications</h2>
+  <ul>
+    <li>
+      Song, Y. (2025). <em>The Art of the Gift: Provenance and the Endowment Effect in Chinese Gift Artworks.</em> 
+      <strong>Journal of Cultural Economics.</strong> 
+      [Winner of the Presidents’ Prize at the 23rd International Conference on Cultural Economics], [Upcoming].
+    </li>
+    <li>
+      Song, Y. (2025). <em>Trash or Treasure? Interviews with a Dealer from the Chinese Folk Antiques Market.</em> 
+      LEAM project book chapter. Palgrave Macmillan Series on Cultural Economics and the Creative Economy. [Upcoming].
+    </li>
+    <li>
+      Oosterlinck, K., Radermecker, A.-S., & Song, Y. (2025). <em>The valuation of copies for Chinese artworks.</em> 
+      <strong>Journal of Cultural Economics, 49(1), 99–140.</strong> 
+      <a href="https://doi.org/10.1007/s10824-023-09495-6" target="_blank">https://doi.org/10.1007/s10824-023-09495-6</a>
+    </li>
+    <li>
+      Song, Y., & Radermecker, A.-S. (2024). <em>How Does Meaning Affect the Perceived Value of Art? The Case of Chinese Calligraphy.</em> 
+      <strong>Culture Unbound.</strong> 
+      <a href="https://doi.org/10.3384/cu.4419" target="_blank">https://doi.org/10.3384/cu.4419</a>
+    </li>
+    <li>
+      Song, Y. (2024). <em>Valuing Collaboration in Art: Insights from Zhang Daqian's Network.</em> 
+      Working Papers CEB 24-012, ULB — Université Libre de Bruxelles.
+    </li>
+  </ul>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Yuqing Song</p>
+  </footer>
 </body>
 </html>
