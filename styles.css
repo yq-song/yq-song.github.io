@@ -52,6 +52,7 @@ section {
   margin: 0 auto;
   padding: 20px;
   text-align: left;
+  margin-left: 20px;   /* ← add this */
 }
 
 section ul {
@@ -60,15 +61,11 @@ section ul {
   margin-left: 20px;  /* align with header text */
 }
 
-section li, section p {
-  margin: 0.3em 0;
+/* Ensure all text aligns like container blocks */
+header h1, header p,
+section h1, section h2, section p, section li {
+  margin-left: 20px;
   text-align: left;
-}
-
-h1, h2 {
-  font-family: "Garamond", serif;
-  color: #000;              /* pure black headings */
-  margin-top: 0;
 }
 
 /* Footer */
