@@ -73,6 +73,6 @@ footer {
   color: #333;              /* medium grey text */
 }
 
-.small-gap {
-  margin-top: 0.5em;  /* adds half a line of space above */
+header p.small-gap {
+  margin-top: 0.5em; /* adds half a line of space above */
 }
