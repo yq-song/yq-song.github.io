@@ -98,3 +98,19 @@ header p.small-gap {
   border-radius: 50%;  /* makes the photo perfectly round */
   display: block;
 }
+
+/* Contact section alignment */
+section {
+  text-align: left;   /* force section text to align left */
+  margin-left: 0;     /* remove unintended left margin */
+}
+
+section ul {
+  list-style: none;   /* remove bullets for clean look */
+  padding-left: 0;    /* no extra indentation */
+  text-align: left;   /* align list items left */
+}
+
+section li {
+  text-align: left;   /* ensure each list item is left-aligned */
+}
