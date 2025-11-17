@@ -76,3 +76,20 @@ footer {
 header p.small-gap {
   margin-top: 1em; /* adds half a line of space above */
 }
+
+/* Profile photo styling */
+.profile-photo {
+  width: 180px;        /* adjust size */
+  border-radius: 50%;  /* circular crop */
+  display: block;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* text left, photo right */
+  align-items: center;            /* vertical alignment */
+}
+
+.header-photo {
+  margin-left: 20px; /* spacing between text and photo */
+}
