@@ -34,6 +34,17 @@ nav a:hover {
   color: #555;              /* dark grey hover */
 }
 
+.job-market-banner {
+  background-color: #f9f9f9;   /* same very light grey as nav */
+  padding: 10px 20px;          /* same padding as nav */
+  margin-top: 0;               /* no space above banner */
+  margin-bottom: 20px;         /* spacing below banner */
+  border-bottom: 1px solid #ccc; /* same grey divider */
+  text-align: center;          /* center the text */
+  font-weight: bold;           /* emphasize */
+  color: #111;                 /* same black text as nav links */
+}
+
 /* Header and Section containers */
 header, section {
   max-width: 800px;
@@ -103,22 +114,4 @@ footer {
   min-width: 160px;    /* never smaller than 160px */
   border-radius: 50%;  /* perfectly round */
   display: block;
-}
-
-.job-market-banner {
-  background-color: #f4f4f4;   /* light grey background */
-  color: #000;                 /* black text */
-  text-align: center;          /* center the text */
-  font-weight: bold;           /* emphasize */
-  font-size: 1.1rem;           /* slightly larger text */
-  padding: 10px 0;             /* spacing */
-  border-bottom: 2px solid #ccc; /* subtle grey divider */
-}
-
-/* Optional: adjust for mobile screens */
-@media (max-width: 600px) {
-  .job-market-banner {
-    font-size: 1rem;
-    padding: 8px 0;
-  }
 }
