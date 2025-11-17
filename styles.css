@@ -79,8 +79,9 @@ header p.small-gap {
 
 /* Profile photo styling */
 .profile-photo {
-  width: 120px;
-  border-radius: 8px;  /* small curve */
+  width: 20%;        /* takes 20% of header width */
+  max-width: 220px;  /* never larger than 220px */
+  min-width: 150px;  /* never smaller than 150px */
 }
 
 .header-container {
