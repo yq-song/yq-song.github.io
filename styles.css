@@ -34,38 +34,48 @@ nav a:hover {
   color: #555;              /* dark grey hover */
 }
 
-/* Page sections */
 /* Header container to match section alignment */
 header {
   max-width: 800px;   /* same width as sections */
-  margin: 0 auto;     /* center the block, but keep text left */
+  margin: 0 auto;     /* center the block, text left inside */
   padding: 20px;
   text-align: left;
 }
 
+/* Header text */
 header h1, header p {
-  margin-left: 20px;  /* consistent left spacing */
+  margin: 0.3em 0;    /* neat spacing */
+  text-align: left;
 }
 
+/* Page sections */
 section {
   max-width: 800px;
   margin: 0 auto;
   padding: 20px;
   text-align: left;
-  margin-left: 20px;   /* ← add this */
+}
+
+section h2 {
+  margin: 0.5em 0;
+  text-align: left;
 }
 
 section ul {
   list-style: none;   /* remove bullets */
   padding-left: 0;    /* remove indentation */
-  margin-left: 20px;  /* align with header text */
+  margin-left: 0;     /* align flush with section padding */
 }
 
-/* Ensure all text aligns like container blocks */
-header h1, header p,
-section h1, section h2, section p, section li {
-  margin-left: 20px;
+section li, section p {
+  margin: 0.3em 0;
   text-align: left;
+}
+
+/* Headings */
+h1, h2 {
+  color: #000;              /* pure black headings */
+  margin-top: 0;            /* remove default extra spacing */
 }
 
 /* Footer */
@@ -78,11 +88,7 @@ footer {
   color: #333;              /* medium grey text */
 }
 
-header p.small-gap {
-  margin-top: 0.1em; /* adds half a line of space above */
-}
-
-/* Header layout */
+/* Header layout (text + photo side by side) */
 .header-container {
   display: flex;
   justify-content: space-between; /* text left, photo right */
@@ -97,9 +103,9 @@ header p.small-gap {
 
 /* Profile photo styling */
 .profile-photo {
-  width: 25%;          /* slightly bigger */
+  width: 25%;          /* responsive size */
   max-width: 240px;    /* never larger than 240px */
   min-width: 160px;    /* never smaller than 160px */
-  border-radius: 50%;  /* makes the photo perfectly round */
+  border-radius: 50%;  /* perfectly round */
   display: block;
 }
