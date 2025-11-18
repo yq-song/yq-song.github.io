@@ -67,6 +67,11 @@ header h1, header p {
   text-align: left;
 }
 
+.header-text h1 {
+  margin-top: 0;        /* remove extra space above title */
+  margin-bottom: 0.3em; /* keep a little space below */
+}
+
 /* Section headings */
 section h2 {
   margin: 0.5em 0;
