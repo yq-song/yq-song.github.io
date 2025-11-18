@@ -19,12 +19,14 @@ nav {
 
 nav ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
+  margin-bottom: 0;
+  padding: 10px 40px;          /* adds breathing room */
+  border-bottom: 1px solid #ccc;
   display: flex;
   flex-wrap: wrap;         /* allows wrapping on smaller screens */
-  gap: 2.5rem;
+  gap: 4rem;
   justify-content: flex-end; /* NEW: push links to the right */
+  box-sizing: border-box;
 }
 
 nav a {
