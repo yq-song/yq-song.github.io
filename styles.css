@@ -109,6 +109,13 @@ footer {
   padding: 20px 0;                /* remove left padding */
 }
 
+.header-text {
+  flex: 1;              /* let text take available space */
+  min-width: 0;         /* allow wrapping instead of overflow */
+  font-size: 1rem;   /* same as body text */
+  line-height: 1.4;  /* natural spacing */
+}
+
 .header-photo {
   margin-left: 20px;   /* space between text and photo */
   margin-right: 30px;  /* space from right edge */
