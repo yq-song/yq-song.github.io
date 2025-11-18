@@ -266,5 +266,5 @@ footer i {
 }
 
 .small-gap {
-  margin-top: 0.5em;   /* add space above this paragraph */
+  margin-top: 0.5em !important;
 }
