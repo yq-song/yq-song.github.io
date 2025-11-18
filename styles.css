@@ -11,26 +11,32 @@ body {
 /* Navigation bar */
 nav {
   background-color: #f9f9f9; /* very light grey */
-  padding-right: 40px;       /* extra space on the right only */
+  padding-right: 30px;       /* extra space on the right only */
   margin-bottom: 0;
   border-bottom: 1px solid #ccc; /* medium grey line */
   box-sizing: border-box;
+  height: 50px;              /* fixed height for the bar */
+  display: flex;
+  align-items: center;       /* vertically center contents */
 }
 
 nav ul {
   list-style: none;
-  padding: 10px 40px;          /* adds breathing room */
+  margin: 0;
+  padding: 0;                /* remove extra vertical padding */
   display: flex;
-  flex-wrap: wrap;         /* allows wrapping on smaller screens */
-  gap: 3.5rem;
-  justify-content: flex-end; /* NEW: push links to the right */
+  flex-wrap: wrap;
+  justify-content: flex-end; /* push links to the right */
+  gap: 2rem;                 /* spacing between links */
+  width: 100%;
 }
 
 nav a {
   text-decoration: none;
-  color: #111;              /* black links */
+  color: #111;
   font-weight: bold;
-  font-size: 1rem;         /* consistent with banner text */
+  font-size: 1rem;
+  line-height: 1;            /* prevent extra vertical space */
 }
 
 nav a:hover {
