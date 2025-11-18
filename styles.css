@@ -111,7 +111,8 @@ footer {
   display: flex;
   justify-content: space-between; /* text left, photo right */
   align-items: flex-start;        /* photo aligns to top */
-  padding: 20px 0;                /* remove left padding */
+  gap: 15px;
+  padding-top: 0;          /* ensure no extra space above */
 }
 
 .header-text {
