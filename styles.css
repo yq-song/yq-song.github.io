@@ -152,6 +152,12 @@ footer {
     gap: 15px;                 /* spacing between text and photo */
   }
 
+  nav {
+    width: 100%;          /* ensure full width on mobile */
+    padding: 15px 20px;   /* give more vertical space */
+    box-sizing: border-box; /* padding included in width */
+  }
+   
   nav ul {
     flex-direction: column;    /* stack links vertically */
     gap: 10px;                 /* smaller spacing */
@@ -160,6 +166,7 @@ footer {
 
 nav a {
   display: block;       /* stack links like banner text */
+  width: 100%;          /* links stretch across nav */
   line-height: 1.4;     /* breathing room */
   padding: 5px 0;       /* vertical spacing per link */
   font-size: 1rem;      /* same as banner text */
