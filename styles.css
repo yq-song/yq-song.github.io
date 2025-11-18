@@ -170,3 +170,24 @@ footer {
     font-size: 0.95rem;       /* scale down slightly */
   }
 }
+
+@media (max-width: 600px) {
+  header, section {
+    max-width: 100%;     /* let text use full width */
+    margin: 0;           /* remove forced left offset */
+    padding: 10px;       /* balanced padding */
+    text-align: left;    /* keep left alignment */
+  }
+
+  .header-container {
+    flex-direction: column;   /* stack text and photo vertically */
+    align-items: flex-start;  /* keep left alignment */
+  }
+
+  .profile-photo {
+    width: 50%;          /* relative size */
+    max-width: 160px;    /* cap size */
+    min-width: auto;     /* remove rigid minimum */
+    margin: 10px 0;      /* spacing below text */
+  }
+}
