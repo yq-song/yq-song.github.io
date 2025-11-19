@@ -196,10 +196,11 @@ footer i {
 
   .header-photo {
     display: block;
-    margin: 15px auto; /* center photo with space above/below */
-    margin: 15px auto;   /* center photo */
-    max-width: 80%;      /* prevent overflow on small screens */
+    margin: 15px 0;       /* space above/below, no auto centering */
+    max-width: 80%;       /* prevent overflow on small screens */
+    float: left;          /* align photo to the left */
   }
+
 
   .header-text {
     font-size: 1rem;   /* consistent with body text */
