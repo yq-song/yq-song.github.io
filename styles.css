@@ -286,24 +286,16 @@ footer i {
 
 details {
   margin-top: 0.35rem;   /* small gap before the toggle */
+  margin-left: 0;        /* remove browser default indent */
+  padding-left: 0;       /* reset padding */
 }
 
 summary {
-  display: inline-block; /* keeps triangle aligned with text */
-  margin-left: 0;        /* removes default indent */
-  cursor: pointer;
+  display: list-item;    /* keeps the triangle marker visible */
+  margin-left: 0;        /* align flush with headers */
+  padding-left: 0;       /* no extra spacing */
   font-weight: bold;
-}
-
-summary::-webkit-details-marker {
-  margin-right: 0.25rem; /* neat gap between triangle and text */
-}
-
-summary {
-  display: list-item;   /* restores the default triangle marker */
   cursor: pointer;
-  font-weight: bold;
-  margin-left: 0;
   line-height: 1.4;
 }
 
