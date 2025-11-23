@@ -284,21 +284,13 @@ footer i {
   line-height: 1.4;      /* readable but compact */
 }
 
+/* Keep details/summary simple — no forced alignment overrides */
 details {
-  margin-left: 0;
-  padding-left: 0;
+  margin-top: 0.35rem;   /* small gap before the toggle */
 }
 
 summary {
-  display: list-item;          /* keeps triangle visible */
-  list-style-position: inside; /* marker sits inside text block */
-  margin: 0;
-  padding: 0;
-  font-weight: bold;
-  cursor: pointer;
-  line-height: 1.4;
-}
-
-summary::-webkit-details-marker {
-  margin-right: 0.25rem;       /* neat gap between triangle and text */
+  cursor: pointer;       /* makes toggle clickable */
+  font-weight: bold;     /* emphasize the toggle text */
+  line-height: 1.4;      /* consistent with paper text */
 }
