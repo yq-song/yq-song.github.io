@@ -40,7 +40,7 @@ nav {
 
   display: flex;
   align-items: center;       /* vertically center contents */
-  justify-content: flex-end; /* links pushed to the right */
+  justify-content: space-between; /* brand left, links right */
 
   border-bottom: 1px solid #ccc; /* medium grey line */
   height: auto;             /* remove fixed height */
@@ -50,9 +50,10 @@ nav {
 
 nav .brand {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 2rem;
   color: #111;
   margin-left: 7px; /* 7px from the left edge */
+  white-space: nowrap; /* force text to stay on one line */
 }
 
 nav ul {
@@ -60,10 +61,7 @@ nav ul {
   margin: 0;
   padding: 0;                /* remove extra vertical padding */
   display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end; /* push links to the right */
   gap: 5rem;                 /* spacing between links */
-  width: 100%;
 }
 
 nav a {
