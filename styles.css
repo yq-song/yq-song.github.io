@@ -46,6 +46,8 @@ nav {
   height: auto;             /* remove fixed height */
 
   z-index: 1000;         /* stays above other content */
+
+  font-size: 1.4rem; /* increase overall nav text size */
 }
 
 nav .brand {
