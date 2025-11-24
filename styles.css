@@ -94,7 +94,8 @@ nav a,
   align-items: center;        /* vertical center */
   justify-content: center;    /* horizontal center */
   
-  height: var(--banner-height, 60px)!important;
+  height: var(--banner-height, 60px) !important;
+  flex-shrink: 0; /* prevent flexbox from squeezing it! */
   margin-top: var(--nav-height, 60px);
 
   margin-bottom: 20px; /* optional spacing below banner */
@@ -118,6 +119,10 @@ main {
   margin: 0; /* prevent margin collapse */
     
   display: block; /* Force block-level layout so it doesn't shrink or overlap */
+}
+
+header, main {
+  margin-top: 0;
 }
 
 /* Header and Section containers */
