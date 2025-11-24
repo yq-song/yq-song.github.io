@@ -90,14 +90,15 @@ nav a,
 }
 
 .job-market-banner {
+  display: flex;              /* robust centering */
+  align-items: center;        /* vertical center */
+  justify-content: center;    /* horizontal center */
+  
   height: var(--banner-height);
   background-color: #f9f9f9;   /* same very light grey as nav */
-  padding: 10px 20px;          /* same padding as nav */
+  padding: 0 20px;          /* horizontal padding only */
   
   border-bottom: 1px solid #ccc; /* same grey divider */
-  text-align: center;          /* center the text */
-  
-  line-height: var(--banner-height); /* vertically center text */
   font-weight: bold;           /* emphasize */
   color: #111;                 /* same black text as nav links */
   
@@ -105,7 +106,6 @@ nav a,
   margin-bottom: 20px; /* optional spacing below banner */
 
   overflow: hidden;  /* prevent wrapping */
-
   white-space: nowrap; /* keep text on one line */
 }
 
