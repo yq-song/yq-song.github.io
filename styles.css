@@ -30,17 +30,20 @@ hr {
 
 /* Navigation bar */
 nav {
-  background-color: #f9f9f9; /* very light grey */
-  padding: 10px 70px 10px 20px; /* top/bottom 10px, left 20px, right 70px */
-  margin-bottom: 0;
-  border-bottom: 1px solid #ccc; /* medium grey line */
-  height: auto;             /* remove fixed height */
-  display: flex;
-  align-items: center;       /* vertically center contents */
   position: fixed;       /* sticks to the top */
   top: 0;                /* align at very top */
   left: 0;               /* anchor to left edge */
   width: 100%;           /* always full width */
+  padding: 10px 70px 10px 20px; /* top/bottom 10px, left 20px, right 70px */
+  
+  background-color: #f9f9f9; /* very light grey */
+
+  display: flex;
+  align-items: center;       /* vertically center contents */
+
+  border-bottom: 1px solid #ccc; /* medium grey line */
+  height: auto;             /* remove fixed height */
+
   z-index: 1000;         /* stays above other content */
 }
 
@@ -96,7 +99,7 @@ nav, .job-market-banner {
 
 /* Main content area */
 main {
-  padding-top: 60px; /* adjust to match nav height */
+  padding-top: 120px; /* adjust to match nav height */
   flex: 1; /* pushes footer down */
 }
 
