@@ -148,6 +148,12 @@ header h1, header p {
   margin-bottom: 0.3em; /* same gap below as the title */
 }
 
+.header-text h2 {
+  font-size: 1.75rem; /* ~28px */
+  margin-top: 0;
+  margin-bottom: 0.3em;
+}
+
 /* Section headings */
 section h2 {
   margin: 0.5em 0;
