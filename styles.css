@@ -94,7 +94,7 @@ nav a,
   align-items: center;        /* vertical center */
   justify-content: center;    /* horizontal center */
   
-  height: var(--banner-height, 60px);
+  height: var(--banner-height, 60px)!important;
   margin-top: var(--nav-height, 60px);
 
   margin-bottom: 20px; /* optional spacing below banner */
