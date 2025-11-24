@@ -24,6 +24,12 @@ main {
   flex: 1; /* pushes footer down */
 }
 
+hr {
+  border: none;              /* remove default 3D border */
+  border-top: 1px solid #ccc;/* add a clean divider line */
+  margin: 1.5rem 0;          /* spacing above and below */
+}
+
 /* Navigation bar */
 nav {
   background-color: #f9f9f9; /* very light grey */
