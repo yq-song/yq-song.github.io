@@ -132,7 +132,7 @@ header, section {
   text-align: left;
 }
 
-/* Header text */
+/* Header text--set up a scale later */ 
 header h1, header p {
   margin: 0;
   text-align: left;
