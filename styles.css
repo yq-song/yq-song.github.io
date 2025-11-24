@@ -40,11 +40,23 @@ nav {
 
   display: flex;
   align-items: center;       /* vertically center contents */
+  justify-content: flex-end; /* links pushed to the right */
 
   border-bottom: 1px solid #ccc; /* medium grey line */
   height: auto;             /* remove fixed height */
 
   z-index: 1000;         /* stays above other content */
+}
+
+/* Inject your name before the nav content */
+nav::before {
+  content: "Yuqing Song";
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #111;
+  
+  margin-left: 7px;   /* space from the left edge */
+  margin-right: auto; /* push links to the right */
 }
 
 nav ul {
