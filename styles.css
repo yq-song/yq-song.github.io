@@ -79,7 +79,7 @@ nav a,
 
 .job-market-banner {
   position: fixed;       /* stick under nav */
-  top: 100%;             /* place immediately below nav */
+  top: 60px;             /* place immediately below nav */
   
   width: 100%;
   background-color: #f9f9f9;   /* same very light grey as nav */
@@ -99,7 +99,7 @@ nav, .job-market-banner {
 
 /* Main content area */
 main {
-  padding-top: 120px; /* adjust to match nav height */
+  padding-top: 120px; /* nav (60px) + banner (~60px) */
   flex: 1; /* pushes footer down */
 }
 
