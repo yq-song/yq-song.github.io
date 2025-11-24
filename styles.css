@@ -119,6 +119,8 @@ main {
   padding-top: calc(var(--nav-height) + var(--banner-height));
   flex: 1; /* pushes footer down */
   margin: 0; /* prevent margin collapse */
+    
+  display: block; /* Force block-level layout so it doesn't shrink or overlap */
 }
 
 /* Header and Section containers */
