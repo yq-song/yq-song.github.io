@@ -22,12 +22,6 @@ body {
   flex-direction: column;
 }
 
-/* Main content area */
-main {
-  padding-top: 60px; /* adjust to match nav height */
-  flex: 1; /* pushes footer down */
-}
-
 hr {
   border: none;              /* remove default 3D border */
   border-top: 1px solid #ccc;/* add a clean divider line */
@@ -40,7 +34,6 @@ nav {
   padding: 10px 70px 10px 20px; /* top/bottom 10px, left 20px, right 70px */
   margin-bottom: 0;
   border-bottom: 1px solid #ccc; /* medium grey line */
-  box-sizing: border-box;
   height: auto;             /* remove fixed height */
   display: flex;
   align-items: center;       /* vertically center contents */
@@ -82,17 +75,29 @@ nav a,
 }
 
 .job-market-banner {
+  position: fixed;       /* stick under nav */
+  top: 100%;             /* place immediately below nav */
+  
   width: 100%;
   background-color: #f9f9f9;   /* same very light grey as nav */
   padding: 10px 20px;          /* same padding as nav */
-  margin-top: auto;          /* will be offset by main padding */
-  margin-bottom: 20px;         /* spacing below banner */
+  
   border-bottom: 1px solid #ccc; /* same grey divider */
   text-align: center;          /* center the text */
   font-weight: bold;           /* emphasize */
   color: #111;                 /* same black text as nav links */
+  
+  margin-bottom: 20px; /* optional spacing below banner */
+}
 
-  box-sizing: border-box;  /* include padding in width */
+nav, .job-market-banner {
+  box-sizing: border-box;
+}
+
+/* Main content area */
+main {
+  padding-top: 60px; /* adjust to match nav height */
+  flex: 1; /* pushes footer down */
 }
 
 /* Header and Section containers */
