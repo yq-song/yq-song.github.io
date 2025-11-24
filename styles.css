@@ -96,11 +96,17 @@ nav a,
   
   border-bottom: 1px solid #ccc; /* same grey divider */
   text-align: center;          /* center the text */
+  
+  line-height: var(--banner-height); /* vertically center text */
   font-weight: bold;           /* emphasize */
   color: #111;                 /* same black text as nav links */
   
   margin-top: var(--nav-height); /* push below fixed nav */
   margin-bottom: 20px; /* optional spacing below banner */
+
+  overflow: hidden;  /* prevent wrapping */
+
+  white-space: nowrap; /* keep text on one line */
 }
 
 nav, .job-market-banner {
