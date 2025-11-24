@@ -50,7 +50,7 @@ nav {
 
 nav .brand {
   font-weight: bold;
-  font-size: 2rem;
+  font-size: 1.5rem;
   color: #111;
   margin-left: 7px; /* 7px from the left edge */
   white-space: nowrap; /* force text to stay on one line */
@@ -103,7 +103,7 @@ nav, .job-market-banner {
 
 /* Main content area */
 main {
-  padding-top: 120px; /* nav (60px) + banner (~60px) */
+  padding-top: 60px; /* nav height only */
   flex: 1; /* pushes footer down */
 }
 
