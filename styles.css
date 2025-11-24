@@ -43,7 +43,7 @@ nav ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-end; /* push links to the right */
-  gap: 2rem;                 /* spacing between links */
+  gap: 5rem;                 /* spacing between links */
   width: 100%;
 }
 
