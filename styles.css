@@ -312,8 +312,12 @@ footer i {
     text-align: center;    /* keep content centered */
   }
 
+  nav, .job-market-banner {
+    position: static; /* scroll away naturally */
+  }
+  
   main {
-    padding-top: 2rem; /* relative spacing */
+    padding-top: 0;   /* text starts right after nav + banner */
   }
 }
 
@@ -322,6 +326,14 @@ footer i {
   nav ul {
     flex-wrap: wrap;
     gap: 0.75rem;
+  }
+  
+  nav, .job-market-banner {
+    position: static; /* scroll away naturally */
+  }
+  
+  main {
+    padding-top: 0;   /* text starts right after nav + banner */
   }
 }
 
@@ -342,6 +354,14 @@ footer i {
 
   .header-photo {
     max-width: 160px;      /* prevent photo from dominating */
+  }
+  
+  nav, .job-market-banner {
+    position: static; /* scroll away naturally */
+  }
+  
+  main {
+    padding-top: 0;   /* text starts right after nav + banner */
   }
 }
 
