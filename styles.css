@@ -271,6 +271,7 @@ footer i {
   }
   
   nav {
+    transition: transform 0.3s ease; /* smooth hide/show */
     width: 100%;         /* full width */
     padding: 0.875rem 5%;/* balanced padding, avoids making bar too tall */
     box-sizing: border-box;
@@ -279,7 +280,7 @@ footer i {
     flex-direction: column;   /* stack brand + links vertically */
     align-items: center;      /* center everything horizontally */
   }
-
+  
   nav .brand {
     margin-left: 0;          /* remove left offset */
     text-align: center;      /* center text itself */
@@ -299,20 +300,20 @@ footer i {
     text-align: center;
     line-height: 1.4;
     padding: 0.75rem 0;  /* vertical breathing room */
-    font-size: 1rem;
+    font-size: clamp(0.9rem, 2.5vw, 1rem); /* fluid scaling */
   }
   
   .job-market-banner {
     flex-wrap: wrap;       /* allow text to break into lines */
-    font-size: 1rem;       /* slightly smaller text */
+    font-size: clamp(0.9rem, 2.5vw, 1rem);
     padding: 0.5rem 10px;  /* reduce padding */
     height: auto;          /* let height expand naturally */
-    margin-top: 120px;     /* account for taller stacked nav */
+    margin-top: 2rem; /* relative spacing instead of fixed 120px */
     text-align: center;    /* keep content centered */
   }
 
   main {
-    padding-top: 120px; /* extra offset for taller nav */
+    padding-top: 2rem; /* relative spacing */
   }
 }
 
