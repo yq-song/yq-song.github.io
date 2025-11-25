@@ -286,6 +286,9 @@ footer i {
     position: fixed;   /* pin it */
     top: 0;            /* stick to the very top */
     left: 0;
+    right: 0;        /* force it to span full width */
+    width: 100vw;    /* use viewport width */
+    margin: 0;       /* remove any inherited margin */
     width: 100%;       /* span full width */
     background-color: #f9f9f9; /* match nav background */
     z-index: 1000;     /* keep above other elements */
