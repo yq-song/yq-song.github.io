@@ -228,8 +228,8 @@ footer i {
 }
 
 .header-photo {
-  margin-left: 100px;   /* space between text and photo */
-  margin-right: auto;  /* push photo toward the middle/right */
+  display: block;          /* make it a block element */
+  margin: 0 auto;          /* auto left/right margins center it */
 }
 
 /* Profile photo styling */
