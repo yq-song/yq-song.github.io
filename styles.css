@@ -300,15 +300,15 @@ footer i {
     text-align: center;
     line-height: 1.4;
     padding: 0.75rem 0;  /* vertical breathing room */
-    font-size: clamp(0.9rem, 2.5vw, 1rem); /* fluid scaling */
+    font-size: clamp(1rem, 2.5vw, 1.2rem); /* fluid scaling */
   }
   
   .job-market-banner {
     flex-wrap: wrap;       /* allow text to break into lines */
-    font-size: clamp(0.9rem, 2.5vw, 1rem);
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
     padding: 0.5rem 10px;  /* reduce padding */
     height: auto;          /* let height expand naturally */
-    margin-top: 2rem; /* relative spacing instead of fixed 120px */
+    margin-top: 0; /* no gap under nav */
     text-align: center;    /* keep content centered */
   }
 
@@ -340,7 +340,7 @@ footer i {
 /* Extra small phones (≤400px) */
 @media (max-width: 400px) {
   nav a {
-    font-size: 0.9rem;     /* slightly smaller text */
+    font-size: clamp(1rem, 2.5vw, 1.2rem);     /* slightly smaller text */
     line-height: 1.2;      /* keep readability */
     padding: 0.6rem 0;     /* keep touch-friendly spacing */
   }
