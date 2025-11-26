@@ -333,17 +333,9 @@ footer i {
 
 /* Tablet widths */
 @media (max-width: 900px) {
-  nav ul {
-    flex-wrap: wrap;
-    gap: 0.75rem;
-  }
-  
-  nav, .job-market-banner {
-    position: static; /* scroll away naturally */
-  }
-
   .job-market-banner {
     margin-top: 0; /* keep banner snug under nav */
+    text-align: center;
   }
 
   nav .brand {
@@ -351,15 +343,27 @@ footer i {
     top: 0;            /* stick to the very top */
     left: 0;
     right: 0;        /* force it to span full width */
-    width: 100vw;    /* use viewport width */
+    width: 100%;       /* full width */
     margin: 0;       /* remove any inherited margin */
-    width: 100%;       /* span full width */
     background-color: #f9f9f9; /* match nav background */
     z-index: 1000;     /* keep above other elements */
     text-align: center;
     padding: 0.75rem 0; /* breathing room */
     text-decoration: none; /* remove underline */
   }
+
+  nav {
+    position: static;  /* scrolls with page */
+    margin-top: var(--brand-height, 3rem); /* offset for brand bar */
+    width: 100%;
+    padding: 0.875rem 5%;/* balanced padding, avoids making bar too tall */
+    box-sizing: border-box;
+    display: flex;        /* enable flexbox */
+    height: auto;        /* let height adjust naturally */
+    flex-direction: column;   /* stack brand + links vertically */
+    align-items: center;      /* center everything horizontally */
+  }
+
   
   main {
     padding-top: 0;   /* text starts right after nav + banner */
