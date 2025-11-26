@@ -341,6 +341,10 @@ footer i {
   nav, .job-market-banner {
     position: static; /* scroll away naturally */
   }
+
+  .job-market-banner {
+    margin-top: 0; /* keep banner snug under nav */
+  }
   
   main {
     padding-top: 0;   /* text starts right after nav + banner */
@@ -368,6 +372,10 @@ footer i {
   
   nav, .job-market-banner {
     position: static; /* scroll away naturally */
+  }
+
+  .job-market-banner {
+    margin-top: 0; /* keep banner snug under nav */
   }
   
   main {
