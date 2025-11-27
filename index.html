@@ -93,9 +93,12 @@
     if (span) {
       const date = new Date(document.lastModified);
 
-      // Format: 27 Nov 2025
+      // Use the visitor's browser locale
+      const locale = navigator.language || "en-US";
+
+      // Format: 27 Nov 2025 (short month, numeric day, full year)
       const day = date.getDate();
-      const month = date.toLocaleString("en-US", { month: "short" }); // "Nov"
+      const month = date.toLocaleString(locale, { month: "short" });
       const year = date.getFullYear();
 
       span.textContent = `${day} ${month} ${year}`;
