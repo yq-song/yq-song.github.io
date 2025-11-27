@@ -62,7 +62,7 @@
   <!-- Footer -->
   <footer>
     <p style="white-space: nowrap;"> © Yuqing Song <br> Last updated: <span id="lastUpdated"></span> 
-      <br>
+    &nbsp;&nbsp;
       <a href="https://www.linkedin.com/in/yuqing-song-7b5077132/" target="_blank" rel="noopener" aria-label="LinkedIn">
         <i class="fab fa-linkedin"></i>
       </a> 
@@ -75,13 +75,17 @@
     </p>
   </footer>
 
-  <script>
-  document.getElementById("lastUpdated").textContent =
-    new Date(document.lastModified).toLocaleDateString("en-US", {
-      year: "numeric",
-      month: "long",
-      day: "numeric"
-    });
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const span = document.getElementById("lastUpdated");
+    if (span) {
+      span.textContent = new Date(document.lastModified).toLocaleDateString("en-US", {
+        year: "numeric",
+        month: "long",
+        day: "numeric"
+      });
+    }
+  });
 </script>
 </body>
 </html>
