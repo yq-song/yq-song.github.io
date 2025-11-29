@@ -124,6 +124,13 @@ header, main {
   margin-top: 0;
 }
 
+.signature {
+  max-width: 300px;   /* scales down if too large */
+  height: auto;       /* keeps proportions */
+  display: block;     /* avoids inline spacing issues */
+  margin: 0 auto;     /* centers inside the h1 */
+}
+
 /* Header and Section containers */
 header, section {
   max-width: 800px;
