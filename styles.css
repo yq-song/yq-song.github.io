@@ -90,6 +90,12 @@ nav a,
   font-weight: bold;
 }
 
+.banner-spacer {
+  height: var(--banner-height, 60px); /* same height as your old banner */
+  flex-shrink: 0;                     /* prevents collapsing in flex layouts */
+  margin-top: var(--nav-height, 60px);/* keeps spacing below your nav bar */
+}
+
 .job-market-banner {
   display: flex;   /* robust centering */
   align-items: center;        /* vertical center */
