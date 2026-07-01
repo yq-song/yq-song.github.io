@@ -91,9 +91,9 @@ nav a,
 }
 
 .banner-spacer {
-  height: var(--banner-height, 60px); /* same height as your old banner */
-  flex-shrink: 0;                     /* prevents collapsing in flex layouts */
-  margin-top: var(--nav-height, 60px);/* keeps spacing below your nav bar */
+  height: var(--banner-height, 60px); /* reserve banner space */
+  flex-shrink: 0;
+  margin-top: 0; /* remove extra offset */
 }
 
 .job-market-banner {
