@@ -342,7 +342,7 @@ footer i {
   }
   
   main {
-    padding-top: 0;   /* text starts right after nav + banner */
+    padding-top: var(--nav-height, 60px) !important;
   }
 }
 
