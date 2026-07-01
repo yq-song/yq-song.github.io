@@ -119,10 +119,10 @@ nav, .job-market-banner {
 
 /* Main content area */
 main {
-  padding-top: 0 !important;   /* remove double-counting */
-  flex: 1;                     /* pushes footer down */
-  margin: 0;                   /* prevent margin collapse */
-  display: block;              /* block-level layout */
+  padding-top: var(--nav-height, 60px) !important; /* only account for nav */
+  flex: 1; /* pushes footer down */
+  margin: 0; /* prevent margin collapse */
+  display: block; /* block-level layout */
 }
 
 
